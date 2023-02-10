@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Taskinator</h1>
+        <p>Make A List Of Your Task</p>
+    </header>
+
+    <section class="sec-1">
+
+        <form action="" name="form" id="form">
+            <div class="fields">
+                <input class="title-input" type="text" name="task-name" placeholder="Enter task name" id="task">           
+                <select class="task-type" name="select-options" id="">
+                    <option value="WEB">WEB</option>
+                    <option value="">OFFLINE</option>
+                    <option value="">PHYSICAL</option>
+                    <option value="">STUDY</option>
+                </select>            
+                <button class="add-task-btn" id="add-task-btn" onclick="fun()">add task</button>
+
+            </div>            
+            <div class="main">
+                <div class="to-do-div">
+                    <h3 class="h3">Tasks To Do.</h3>
+                    <ul id="ul">
+                        <!-- <li class="li"></li> -->
+                    </ul>
+                </div>
+                <div class="prog-div">
+                    <h3 class="h3">Pendig Tasks</h3>
+                    <ul id="ul">
+                        <!-- <li class="li">new list is about to add.<br>
+                        <p class="task-description">PHYSICAL</p>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="done-div">
+                    <h3 class="h3">Done Tasks.</h3>
+                    <ul id="ul">
+                        <!-- <li class="li">new list is about to add.<br>
+                        <p class="task-description">PHYSICAL</p>
+                        </li> -->
+                    </ul>
+                </div>
+                
+            </div>
+            
+
+        </form>
+
+    </section>
+
+    <script src="ind.js"></script>
+</body>
+</html>
