@@ -1,64 +1,55 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
 <body>
-    <header>
-        <h1>Taskinator</h1>
-        <p>Make A List Of Your Task</p>
-    </header>
 
-    <section class="sec-1">
+Name: <input type="text" id="myText" value="">
+<br/>
+<br/>
+Age: <input type="number" name="age">
 
-        <form action="" name="form" id="form">
-            <div class="fields">
-                <input class="title-input" type="text" name="task-name" placeholder="Enter task name" id="task">           
-                <select class="task-type" name="select-options" id="">
-                    <option value="WEB">WEB</option>
-                    <option value="">OFFLINE</option>
-                    <option value="">PHYSICAL</option>
-                    <option value="">STUDY</option>
-                </select>            
-                <button class="add-task-btn" id="add-task-btn" onclick="fun()">add task</button>
+<button onclick="myFunction()">Try it</button>
 
-            </div>            
-            <div class="main">
-                <div class="to-do-div">
-                    <h3 class="h3">Tasks To Do.</h3>
-                    <ul id="ul">
-                        <!-- <li class="li"></li> -->
-                    </ul>
-                </div>
-                <div class="prog-div">
-                    <h3 class="h3">Pendig Tasks</h3>
-                    <ul id="ul">
-                        <!-- <li class="li">new list is about to add.<br>
-                        <p class="task-description">PHYSICAL</p>
-                        </li> -->
-                    </ul>
-                </div>
-                <div class="done-div">
-                    <h3 class="h3">Done Tasks.</h3>
-                    <ul id="ul">
-                        <!-- <li class="li">new list is about to add.<br>
-                        <p class="task-description">PHYSICAL</p>
-                        </li> -->
-                    </ul>
-                </div>
-                
-            </div>
-            
+<script>
 
-        </form>
+function myFunction() {
+  
+    var input = document.getElementsByTagName('input')[0].value;
+    var agenum = document.getElementsByTagName('input')[1].value;
+    var div = document.createElement('div');
+    div.style.border = '2px solid red';
+    div.style.padding = '10px';
+    div.style.display = 'block';
+    document.body.appendChild(div);
+  
+    var output = 'Name: ' + input + '<br/>' + 'Age: ' + agenum;
+    div.innerHTML = output;
+    
+    //create your delete button after you click try it
+    var del = document.createElement('button');
+    del.style.textDecoration = 'none';
+    del.innerHTML = 'Remove this person?';
+    del.style.color = 'white';
+    del.style.backgroundColor = 'blue';
+    //assign a function for it when clicked
+    del.onclick = function() { deleteButton(div,this)}; 
+    document.body.appendChild(del);
+//    <!--  deleteButton(div);  --> 
+}
 
-    </section>
+function deleteButton(x,y) {
+	  
+    var parent = document.getElementsByTagName("BODY")[0];
+    //remove the div
+    parent.removeChild(x);
+    //remore the button
+    parent.removeChild(y);
+    
+}
 
-    <script src="ind.js"></script>
+
+
+</script>
+
 </body>
 </html>
