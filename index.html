@@ -19,46 +19,38 @@
         <form action="" name="form" id="form">
             <div class="fields">
                 <input class="title-input" type="text" name="task-name" placeholder="Enter task name" id="task">           
-                <select class="task-type" name="select-options" id="">
-                    <option value="WEB">WEB</option>
-                    <option value="">OFFLINE</option>
-                    <option value="">PHYSICAL</option>
-                    <option value="">STUDY</option>
+                <select class="task-type" name="select-options" id="select-main">
+                    <option value="">Tasks To Do</option>
+                    <option value="">Tasks For Later</option>
+                    <option value="">Done Tasks</option>
                 </select>            
                 <button class="add-task-btn" id="add-task-btn" onclick="fun()">add task</button>
 
             </div>            
             <div class="main">
                 <div class="to-do-div">
-                    <h3 class="h3">Tasks To Do.</h3>
+                    <h3 class="h3">Tasks To Do</h3>
                     <ul id="ul">
-                        <!-- <li class="li"></li> -->
+                        <!-- <li class="li">hey<br>
+                            <button class="delete_btn">Delete</button>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="prog-div">
-                    <h3 class="h3">Pendig Tasks</h3>
-                    <ul id="ul">
-                        <!-- <li class="li">new list is about to add.<br>
-                        <p class="task-description">PHYSICAL</p>
-                        </li> -->
-                    </ul>
+                    <h3 class="h3">Tasks For Later</h3>
+                    <ul id="progress-ul"></ul>
+                    
                 </div>
                 <div class="done-div">
-                    <h3 class="h3">Done Tasks.</h3>
-                    <ul id="ul">
-                        <!-- <li class="li">new list is about to add.<br>
-                        <p class="task-description">PHYSICAL</p>
-                        </li> -->
-                    </ul>
+                    <h3 class="h3">Done Tasks</h3>
+                    <ul id="done-ul"></ul>
+                    
                 </div>
-                
             </div>
-            
-
         </form>
-
     </section>
 
-    <script src="ind.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+

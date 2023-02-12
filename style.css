@@ -40,9 +40,7 @@ header {
     font-weight: 300;
 }
 .sec-1 .main{
-    /* background-color: lightgray; */
     margin: 15px 30px;
-    /* border: 1.2px solid black; */
     height: 100%;
     width: auto;
     display: flex;
@@ -51,7 +49,6 @@ header {
 }
 .sec-1 .main div{
     border: 1px solid black;
-    /* padding: 15px 20px; */
     margin: 20px 50px;
 }
 .li{
@@ -82,5 +79,18 @@ header {
     color: white;
     width: 50px;
     height: 40px;
-    margin: 5px;
+    margin: 5px 0;
 }
+.div-inside-ul{
+    
+    margin: 0;
+    padding: 0;
+} 
+
+
+
+
+
+
+
+
