@@ -4,13 +4,14 @@
     
 }
 header {
-    background-color: rgb(127, 238, 232);
+    background-color: #051e33;
     padding: 40px;
     width: 100%;
     height: 120px;
     line-height: 1.7rem;
     border-bottom: 1px solid black;
     box-sizing: border-box;
+    color: #cfe5f9;
 }
 
 .sec-1 .fields{
@@ -30,7 +31,7 @@ header {
     height: 25px;
 }
 .sec-1{
-    background-color: rgb(231, 226, 226);
+    background-color: #cfe5f9;
     width: 100%;
     height: 100%;
 }
@@ -52,7 +53,7 @@ header {
     margin: 20px 50px;
 }
 .li{
-    background-color: rgb(127, 238, 232);
+    background-color: #c6cdff;
     margin: 10px 20px;
     border: 1.2px solid black;
     border-radius: 10px;
@@ -81,13 +82,31 @@ header {
     height: 40px;
     margin: 5px 0;
 }
+.delete_btn_all{
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin: 0px 0 0 80px;
+}
+
 .div-inside-ul{
-    
     margin: 0;
     padding: 0;
 } 
 
-
+footer{
+    background-color: rgb(2, 41, 39);
+    color: white;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-shadow: 5px 5px 20px lightgray;
+    
+}
 
 
 
